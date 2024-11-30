@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://dy445jv8ktftd"]
+
+[ext_resource type="Texture2D" uid="uid://dxknlmhrg5wss" path="res://1.png" id="2_j72c1"]
+[ext_resource type="Script" path="res://卡牌.gd" id="3_4kbuu"]
+[ext_resource type="Script" path="res://卡牌_目标位置.gd" id="4_qrbad"]
+
+[node name="test" type="CanvasLayer"]
+
+[node name="卡牌_目标位置" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 210.0
+offset_top = 182.0
+offset_right = 360.0
+offset_bottom = 332.0
+texture = ExtResource("2_j72c1")
+script = ExtResource("4_qrbad")
+
+[node name="卡牌_目标位置2" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 964.0
+offset_top = 169.0
+offset_right = 1114.0
+offset_bottom = 319.0
+texture = ExtResource("2_j72c1")
+script = ExtResource("4_qrbad")
+
+[node name="卡牌" type="TextureRect" parent="."]
+z_index = 1
+offset_left = 96.0
+offset_top = 416.0
+offset_right = 246.0
+offset_bottom = 566.0
+texture = ExtResource("2_j72c1")
+script = ExtResource("3_4kbuu")
